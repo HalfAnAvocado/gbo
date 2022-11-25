@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="1.7976931348623157E308"
+      maxWidth="1.7976931348623157E308" minHeight="121.0" minWidth="300.0" prefHeight="121.0"
+      prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.162-ea"
+      fx:controller="com.marvin_elsen.gbo.gui.vocab_trainer.View">
+    <children>
+        <Label text="Bitte übersetzen Sie: ">
+            <padding>
+                <Insets bottom="2.0"/>
+            </padding>
+        </Label>
+        <HBox maxWidth="1.7976931348623157E308" prefHeight="35.0"
+              prefWidth="300.0">
+            <children>
+                <Label fx:id="vocable" prefWidth="130.0"/>
+                <TextField fx:id="translation" maxWidth="1.7976931348623157E308"
+                           onAction="#onTranslationAction"/>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+            <padding>
+                <Insets bottom="2.0" top="2.0"/>
+            </padding>
+        </HBox>
+        <HBox prefHeight="32.0" prefWidth="300.0" spacing="5.0">
+            <children>
+                <Button fx:id="check" mnemonicParsing="false"
+                        onAction="#onTranslationAction" text="Überprüfen"/>
+                <Button fx:id="next" mnemonicParsing="false"
+                        onAction="#onNextClick" text="Weiter"/>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <padding>
+                <Insets top="2.0"/>
+            </padding>
+        </HBox>
+        <Label fx:id="status"/>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</VBox>
