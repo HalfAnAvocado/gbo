@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="300.0"
+      prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.162-ea"
+      fx:controller="com.marvin_elsen.gbo.gui.country.Controller">
+    <children>
+        <ComboBox fx:id="countrySelector" layoutX="14.0"
+                  layoutY="14.0" onAction="#onCountrySelectorClick"
+                  prefHeight="28.0" prefWidth="207.0" promptText="Keine Länder vorhanden"/>
+        <CheckBox fx:id="exactValues" layoutX="14.0" layoutY="54.0"
+                  mnemonicParsing="false" onAction="#onExactValuesClick" text="exakte Angaben"/>
+        <Label layoutX="14.0" layoutY="81.0" text="Land:"/>
+        <Label layoutX="14.0" layoutY="107.0" text="Hauptstadt:"/>
+        <Label layoutX="14.0" layoutY="132.0" text="Einwohner:"/>
+        <Label layoutX="14.0" layoutY="161.0" text="Fläche (in qkm):"/>
+        <Label layoutX="14.0" layoutY="190.0"
+               text="Bevölkerungsdichte (in Personen pro qkm):"/>
+        <Label fx:id="countryName" layoutX="54.0" layoutY="81.0"/>
+        <Label fx:id="capital" layoutX="92.0" layoutY="107.0"/>
+        <Label fx:id="population" layoutX="94.0" layoutY="132.0"/>
+        <Label fx:id="area" layoutX="118.0" layoutY="161.0"/>
+        <Label fx:id="density" layoutX="287.0" layoutY="190.0"/>
+        <TextField fx:id="countryField" layoutX="14.0"
+                   layoutY="223.0" promptText="Land"/>
+        <TextField fx:id="capitalField" layoutX="188.0"
+                   layoutY="223.0" promptText="Hauptstadt"/>
+        <TextField fx:id="populationField" layoutX="359.0"
+                   layoutY="223.0" promptText="Einwohner"/>
+        <TextField fx:id="areaField" layoutX="524.0" layoutY="223.0"
+                   promptText="Fläche"/>
+        <Button fx:id="add" layoutX="18.0" layoutY="258.0"
+                mnemonicParsing="false" onAction="#onAddClick" text="Hinzufügen"/>
+        <Button fx:id="delete" layoutX="145.0" layoutY="258.0"
+                mnemonicParsing="false" onAction="#onDeleteClick" text="Löschen"/>
+    </children>
+</Pane>
