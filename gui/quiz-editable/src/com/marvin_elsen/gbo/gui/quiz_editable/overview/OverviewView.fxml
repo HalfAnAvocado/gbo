@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" prefHeight="282.0" prefWidth="324.0"
+         spacing="10.0" type="VBox" xmlns="http://javafx.com/javafx/8.0.152">
+    <children>
+        <Label text="Übersicht"/>
+        <TableView fx:id="overviewTable" prefHeight="200.0"
+                   prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="questionCol" editable="false"
+                             prefWidth="75.0" text="Frage"/>
+                <TableColumn fx:id="totalAnswerCol"
+                             editable="false" prefWidth="75.0" text="Antworten"/>
+                <TableColumn fx:id="correctAnswerCol"
+                             editable="false" prefWidth="75.0" text="Korrekt"/>
+            </columns>
+        </TableView>
+        <Button fx:id="deleteHistory" mnemonicParsing="false"
+                onAction="#onDeleteHistoryClick" text="Ergebnisse löschen"/>
+    </children>
+    <opaqueInsets>
+        <Insets/>
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</fx:root>
