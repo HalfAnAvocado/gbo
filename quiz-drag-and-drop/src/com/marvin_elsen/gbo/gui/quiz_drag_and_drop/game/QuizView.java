@@ -181,7 +181,7 @@ public class QuizView extends VBox
 
             this.possibleAnswersGridPane.add(label, answerIndex, 0);
 
-            label = new Label(Integer.toString((answerIndex + 1)) + ".");
+            label = new Label(answerIndex + 1 + ".");
             label.setPadding(new Insets(5));
             this.correctAnswersGridPane.add(label, 0, answerIndex);
 

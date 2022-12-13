@@ -7,15 +7,15 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class Question
 {
-    private SimpleStringProperty question;
+    private final SimpleStringProperty question;
 
     private String[] possibleAnswers;
 
-    private SimpleIntegerProperty indexOfCorrectAnswer;
+    private final SimpleIntegerProperty indexOfCorrectAnswer;
 
-    private SimpleIntegerProperty timesAnswered;
+    private final SimpleIntegerProperty timesAnswered;
 
-    private SimpleIntegerProperty timesCorrectlyAnswered;
+    private final SimpleIntegerProperty timesCorrectlyAnswered;
 
 
     public Question(String question, String[] possibleAnswers, int indexOfCorrectAnswer)

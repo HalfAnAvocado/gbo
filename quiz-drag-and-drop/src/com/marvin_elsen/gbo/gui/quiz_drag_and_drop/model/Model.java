@@ -7,7 +7,7 @@ import javafx.collections.ObservableList;
 
 public class Model
 {
-    private ObservableList<Question> questions;
+    private final ObservableList<Question> questions;
 
     private int currentQuestionIndex;
 

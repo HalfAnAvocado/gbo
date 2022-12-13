@@ -7,7 +7,7 @@ import java.util.List;
 
 public class UndoRedoManager
 {
-    private List<UndoableRedoableAction> actions = new ArrayList<>();
+    private final List<UndoableRedoableAction> actions = new ArrayList<>();
 
     private int currentPosition = 0;
 
