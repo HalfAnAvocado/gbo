@@ -30,7 +30,7 @@ public class Calculator extends Application
 
     public static void main(String[] args)
     {
-        launch(args);
+        Application.launch(args);
     }
 
 
@@ -90,7 +90,7 @@ public class Calculator extends Application
     public void start(Stage primaryStage) throws Exception
     {
         this.computation = new Computation();
-        Pane root = FXMLLoader.load(this.getClass().getResource("Calculator.fxml"));
+        Pane root = FXMLLoader.load(this.getClass().getResource("com/marvin_elsen/gbo/uebung_02/aufgabe_07/Calculator.fxml"));
 
         Scene scene = new Scene(root);
 
