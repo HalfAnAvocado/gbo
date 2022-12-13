@@ -4,7 +4,7 @@
 
 Dieses Repository beinhaltet meine Lösungen zu allen Implementierungsaufgaben, die im Rahmen der Übungen des Moduls "Grafische Benutzer Oberflächen" (kurz GBO) im Wintersemester 2017/2018 an der Hochschule Trier implementiert werden mussten.
 
-Ich bin ein lebenslanger Lerne, also ist alles ein Work-In-Progress, wie ich es bin, aber ich lasse nicht zu, dass mir Perfektionismus in die Quere kommt. Das bedeutet, dass der Code, der hier vorliegt, nicht verbindlich oder vollständig ist und nicht meine beste Arbeit darstellt.
+Ich bin ein lebenslanger Lerner, also ist alles ein Work-In-Progress, wie ich es bin, aber ich lasse nicht zu, dass mir Perfektionismus in die Quere kommt. Das bedeutet, dass der Code, der hier vorliegt, nicht verbindlich oder vollständig ist und nicht meine beste Arbeit darstellt.
 
 **Wichtiger Hinweis:** Jeder der an der Klausur teilnehmen möchte, sollte die Programme zunächst selbst implementieren und sicherstellen, dass er die Inhalte der Vorlesung vollständig verstanden hat!
 
