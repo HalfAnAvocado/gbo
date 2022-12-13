@@ -1,0 +1,2 @@
+Was ist die Ableitung von e^x? {x^e; x*e^x; e; e^x} 3
+Wofür steht die Abkürzung "GBO"? {Grafische Benutzer Ordner; Grün-Bart-Otter; Grafische Benutzeroberflächen; Goldene Benutzeroberflächen; Grönlands-Bier-Oligarchie} 2
