@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" type="BorderPane"
+         xmlns="http://javafx.com/javafx/8.0.141">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Quiz">
+                    <items>
+                        <MenuItem mnemonicParsing="false"
+                                  onAction="#onQuizStartClick" text="Starten">
+                            <accelerator>
+                                <KeyCodeCombination
+                                        alt="UP" code="S" control="DOWN"
+                                        meta="UP" shift="UP" shortcut="UP"/>
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false"
+                                  onAction="#onQuizContinueClick" text="Fortsetzen">
+                            <accelerator>
+                                <KeyCodeCombination
+                                        alt="UP" code="F" control="DOWN"
+                                        meta="UP" shift="UP" shortcut="UP"/>
+                            </accelerator>
+                        </MenuItem>
+                        <SeparatorMenuItem
+                                mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" text="Überblick"
+                                  onAction="#onOverviewClick">
+                            <accelerator>
+                                <KeyCodeCombination
+                                        alt="UP" code="U" control="DOWN"
+                                        meta="UP" shift="UP" shortcut="UP"/>
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false"
+                                  onAction="#onEditorClick" text="Editieren">
+                            <accelerator>
+                                <KeyCodeCombination
+                                        alt="UP" code="E" control="DOWN"
+                                        meta="UP" shift="UP" shortcut="UP"/>
+                            </accelerator>
+                        </MenuItem>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</fx:root>

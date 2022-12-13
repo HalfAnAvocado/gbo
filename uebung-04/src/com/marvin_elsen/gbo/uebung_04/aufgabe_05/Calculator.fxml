@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" hgap="5.0" prefHeight="237.0" prefWidth="227.0"
+          vgap="25.0" xmlns="http://javafx.com/javafx/8.0.162-ea"
+          fx:controller="com.marvin_elsen.gbo.uebung_04.aufgabe_05.CalculatorController">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"
+                           minWidth="10.0" prefWidth="50.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"
+                           minWidth="10.0" prefWidth="50.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"
+                           minWidth="10.0" prefWidth="50.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"
+                           minWidth="10.0" prefWidth="50.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"
+                        vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"
+                        vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"
+                        vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"
+                        vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"
+                        vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"
+                        vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"
+                        vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Button mnemonicParsing="false" onAction="#onClick" text="."
+                GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+        <Button maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#onClearClick" prefHeight="28.0"
+                prefWidth="149.0" text="CLEAR" GridPane.columnSpan="2"
+                GridPane.rowIndex="1"/>
+        <Button maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#onDeleteClick"
+                prefHeight="28.0" prefWidth="67.0" text="DELETE"
+                GridPane.columnIndex="2" GridPane.columnSpan="2"
+                GridPane.rowIndex="1"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="("
+                GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text=")"
+                GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <TextField fx:id="display" editable="false"
+                   prefHeight="28.0" prefWidth="132.0" GridPane.columnSpan="2147483647"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="7"
+                GridPane.rowIndex="3"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="8"
+                GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="9"
+                GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="6"
+                GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="5"
+                GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="4"
+                GridPane.rowIndex="4"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="1"
+                GridPane.rowIndex="5"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="2"
+                GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="3"
+                GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+        <Button mnemonicParsing="false" onAction="#onEqualClick"
+                text="=" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="/"
+                GridPane.columnIndex="3" GridPane.rowIndex="6"/>
+        <Button maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#onClick" prefHeight="28.0"
+                prefWidth="77.0" text="0" GridPane.columnSpan="2"
+                GridPane.rowIndex="6"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="+"
+                GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="-"
+                GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+        <Button mnemonicParsing="false" onAction="#onClick" text="*"
+                GridPane.columnIndex="3" GridPane.rowIndex="5"/>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="10.0" right="10.0" top="20.0"/>
+    </padding>
+</GridPane>
